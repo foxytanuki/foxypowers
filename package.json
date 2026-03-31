@@ -2,7 +2,16 @@
   "name": "foxypowers",
   "version": "0.1.1",
   "private": true,
+  "type": "module",
   "main": "src/index.js",
+  "files": [
+    "commands",
+    "skills",
+    "src"
+  ],
+  "scripts": {
+    "postinstall": "cfg=\"${XDG_CONFIG_HOME:-$HOME/.config}/opencode\"; mkdir -p \"$cfg/command\" \"$cfg/commands\" && cp -f commands/*.md \"$cfg/command/\" && cp -f commands/*.md \"$cfg/commands/\""
+  },
   "opencode": {
     "skills": [
       "skills/git-worktree-guidance"

@@ -2,6 +2,8 @@
 
 Repo for a minimal OpenCode plugin that points users to git-worktree guidance.
 
+Use `/wt` for the plugin-assisted worktree prompt.
+
 ## Install
 
 ```json

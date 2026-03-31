@@ -7,6 +7,8 @@ description: Minimal guidance for using git worktrees with this repo.
 
 Use plain `git worktree` for task isolation.
 
+- Use `/wt` to trigger the plugin prompt for worktree setup.
+
 - Keep main work in the repo root.
 - Put feature/task work in `.worktrees/`.
 - Use standard git commands only; no wrapper scripts or automation.
