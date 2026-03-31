@@ -1,8 +1,9 @@
 # Agent notes
 
-- Feature/task work should normally use `.worktrees/`.
-- Use standard `git worktree` commands only; no custom wrappers.
-- On first use of `.worktrees/`, ask the user whether to ignore it via `.gitignore` or `.git/info/exclude`.
-- After that, follow the repo's actual ignore state.
-- Example create: `git worktree add .worktrees/<name> -b <branch>`
-- Example remove: `git worktree remove .worktrees/<name>`
+This repo is maintainer-focused and intentionally small.
+
+- Keep the plugin code minimal.
+- Keep canonical worktree guidance in `skills/git-worktree-guidance/SKILL.md`.
+- Keep `README.md` short.
+- Do not add wrapper scripts or extra automation.
+- Do not add heavy OpenCode hooks.

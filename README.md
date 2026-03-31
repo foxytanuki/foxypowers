@@ -1,21 +1,24 @@
 # foxypowers
 
-Instruction-first repo for OpenCode/Codex-style agents.
+Repo for a minimal OpenCode plugin that points users to git-worktree guidance.
 
-Purpose: keep the approved git-worktree workflow concise and easy to follow.
+## Install
 
-## Worktree convention
-
-- Main work stays in the repo root; feature/task work normally goes in `.worktrees/`.
-- Use standard `git worktree` commands, not custom wrappers.
-- First use of `.worktrees/` should be confirmed with the user: `.gitignore` or `.git/info/exclude`.
-- This is not the full superpowers workflow.
-
-Examples:
-
-```bash
-git worktree add .worktrees/<name> -b <branch>
-git worktree remove .worktrees/<name>
+```json
+{
+  "plugin": ["foxypowers@git+https://github.com/foxytanuki/foxypowers.git"]
+}
 ```
 
-See `docs/git-worktrees.md` for the practical rules.
+## What this repo does
+
+- ships a tiny plugin entrypoint
+- exposes the guidance skill at `skills/git-worktree-guidance`
+
+## What it does not do
+
+- no wrapper scripts
+- no automation or heavy hooks
+- no full workflow implementation
+
+The main guidance lives in the skill.

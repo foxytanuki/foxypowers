@@ -1,0 +1,11 @@
+{
+  "name": "foxypowers",
+  "version": "0.1.1",
+  "private": true,
+  "main": "src/index.js",
+  "opencode": {
+    "skills": [
+      "skills/git-worktree-guidance"
+    ]
+  }
+}
