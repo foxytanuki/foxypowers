@@ -10,7 +10,7 @@
     "src"
   ],
   "scripts": {
-    "postinstall": "cfg=\"${XDG_CONFIG_HOME:-$HOME/.config}/opencode\"; mkdir -p \"$cfg/command\" \"$cfg/commands\" && cp -f commands/*.md \"$cfg/command/\" && cp -f commands/*.md \"$cfg/commands/\""
+    "postinstall": "cfg=\"${XDG_CONFIG_HOME:-$HOME/.config}/opencode\"; mkdir -p \"$cfg/commands\" && cp -f commands/*.md \"$cfg/commands/\""
   },
   "opencode": {
     "skills": [
