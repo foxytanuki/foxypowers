@@ -14,7 +14,8 @@
   },
   "opencode": {
     "skills": [
-      "skills/git-worktree-guidance"
+      "skills/git-worktree-guidance",
+      "skills/docs-maintenance"
     ]
   }
 }
