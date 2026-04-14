@@ -1,8 +1,9 @@
 # foxypowers
 
-Repo for a minimal OpenCode plugin that points users to git-worktree guidance.
+Repo for a minimal OpenCode plugin that points users to a few small repo-maintenance workflows.
 
 Use `/wt` for the plugin-assisted worktree prompt.
+Use `/foxy-init` to keep `AGENTS.md` canonical while exposing `CLAUDE.md` for Claude Code compatibility.
 
 ## Install
 
@@ -16,6 +17,7 @@ Use `/wt` for the plugin-assisted worktree prompt.
 
 - ships a tiny plugin entrypoint
 - exposes the guidance skill at `skills/git-worktree-guidance`
+- exposes a small init workflow for `AGENTS.md` + `CLAUDE.md`
 
 ## What it does not do
 

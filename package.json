@@ -15,7 +15,8 @@
   "opencode": {
     "skills": [
       "skills/git-worktree-guidance",
-      "skills/docs-maintenance"
+      "skills/docs-maintenance",
+      "skills/claude-compat-init"
     ]
   }
 }
