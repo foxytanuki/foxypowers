@@ -3,6 +3,7 @@
 Repo for a minimal OpenCode plugin that points users to a few small repo-maintenance workflows.
 
 Use `/wt` for worktree setup guidance.
+Use `/wt-clean` to remove finished worktrees and unused branches safely.
 Use `/foxy-init` to keep `AGENTS.md` canonical while exposing `CLAUDE.md` for Claude Code compatibility.
 Use `/tidy-docs` to clean up docs and remove duplicate guidance.
 
