@@ -9,13 +9,17 @@ Use `/tidy-docs` to clean up docs and remove duplicate guidance.
 
 ## Install
 
+Add the plugin package to OpenCode config:
+
 ```json
 {
   "plugin": ["foxypowers@latest"]
 }
 ```
 
-For local plugin development, point OpenCode at `src/index.js` and place or symlink `commands/*.md` into your OpenCode commands directory.
+The package install copies `commands/*.md` into the global OpenCode commands directory.
+
+For local plugin development, symlink `commands/*.md` into your OpenCode commands directory and symlink `src/index.js` into your OpenCode plugins directory.
 
 ## What this repo does
 
@@ -26,5 +30,5 @@ For local plugin development, point OpenCode at `src/index.js` and place or syml
 ## What it does not do
 
 - no wrapper scripts
-- no automation or heavy hooks
+- no runtime automation or heavy hooks
 - no full workflow implementation

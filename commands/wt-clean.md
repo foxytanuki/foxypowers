@@ -49,14 +49,14 @@ For each candidate, include the reason and exact command.
 Use:
 
 ```sh
-git worktree remove .worktrees/<name>
-git branch -d <branch>
+git worktree remove -- .worktrees/<name>
+git branch -d -- <branch>
 ```
 
 Only when the user explicitly confirms unmerged branch deletion, use:
 
 ```sh
-git branch -D <branch>
+git branch -D -- <branch>
 ```
 
 Only when the user explicitly asks to delete a remote branch, use:
