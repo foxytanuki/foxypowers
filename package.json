@@ -1,9 +1,14 @@
 {
   "name": "foxypowers",
-  "version": "0.1.1",
-  "private": true,
+  "version": "0.1.2",
+  "description": "Minimal OpenCode plugin with small repo-maintenance commands.",
   "type": "module",
   "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/foxytanuki/foxypowers.git"
+  },
+  "license": "MIT",
   "files": [
     "commands",
     "src"

@@ -11,11 +11,11 @@ Use `/tidy-docs` to clean up docs and remove duplicate guidance.
 
 ```json
 {
-  "plugin": ["foxypowers@git+https://github.com/foxytanuki/foxypowers.git"]
+  "plugin": ["foxypowers@latest"]
 }
 ```
 
-For local plugin usage, point OpenCode at `src/index.js` and place or symlink `commands/*.md` into your OpenCode commands directory.
+For local plugin development, point OpenCode at `src/index.js` and place or symlink `commands/*.md` into your OpenCode commands directory.
 
 ## What this repo does
 
