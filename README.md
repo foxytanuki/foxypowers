@@ -7,6 +7,7 @@ Use `/wt-clean` to remove finished worktrees and unused branches safely.
 Use `/foxy-init` to keep `AGENTS.md` canonical while exposing `CLAUDE.md` for Claude Code compatibility.
 Use `/tidy-docs` to clean up docs and remove duplicate guidance.
 Use the `codex-image-gen` skill for Codex CLI built-in `image_gen` workflows.
+Use the `handover` skill to write concise continuation notes to `HANDOVER.md`.
 
 ## Install
 
@@ -28,6 +29,7 @@ For local plugin development, symlink `commands/*.md` into your OpenCode command
 - exposes small repo-maintenance commands
 - exposes a small init workflow for `AGENTS.md` + `CLAUDE.md`
 - exposes the `codex-image-gen` skill
+- exposes the `handover` skill
 
 ## What it does not do
 
