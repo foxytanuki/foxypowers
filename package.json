@@ -1,6 +1,6 @@
 {
   "name": "foxypowers",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Minimal OpenCode plugin with small repo-maintenance commands.",
   "type": "module",
   "main": "src/index.js",
@@ -11,9 +11,10 @@
   "license": "MIT",
   "files": [
     "commands",
+    "skills",
     "src"
   ],
   "scripts": {
-    "postinstall": "cfg=\"${XDG_CONFIG_HOME:-$HOME/.config}/opencode\"; mkdir -p \"$cfg/commands\" && cp -f commands/*.md \"$cfg/commands/\""
+    "postinstall": "cfg=\"${XDG_CONFIG_HOME:-$HOME/.config}/opencode\"; mkdir -p \"$cfg/commands\" \"$cfg/skills\" && cp -f commands/*.md \"$cfg/commands/\" && cp -R skills/* \"$cfg/skills/\""
   }
 }

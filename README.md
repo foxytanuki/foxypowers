@@ -6,6 +6,7 @@ Use `/wt` for worktree setup guidance.
 Use `/wt-clean` to remove finished worktrees and unused branches safely.
 Use `/foxy-init` to keep `AGENTS.md` canonical while exposing `CLAUDE.md` for Claude Code compatibility.
 Use `/tidy-docs` to clean up docs and remove duplicate guidance.
+Use the `codex-image-gen` skill for Codex CLI built-in `image_gen` workflows.
 
 ## Install
 
@@ -17,7 +18,7 @@ Add the plugin package to OpenCode config:
 }
 ```
 
-The package install copies `commands/*.md` into the global OpenCode commands directory.
+The package install copies `commands/*.md` into the global OpenCode commands directory and `skills/*` into the global OpenCode skills directory.
 
 For local plugin development, symlink `commands/*.md` into your OpenCode commands directory and symlink `src/index.js` into your OpenCode plugins directory.
 
@@ -26,6 +27,7 @@ For local plugin development, symlink `commands/*.md` into your OpenCode command
 - ships a tiny plugin entrypoint
 - exposes small repo-maintenance commands
 - exposes a small init workflow for `AGENTS.md` + `CLAUDE.md`
+- exposes the `codex-image-gen` skill
 
 ## What it does not do
 
