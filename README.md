@@ -1,19 +1,28 @@
 # foxypowers
 
-Repo for a minimal OpenCode plugin that points users to a few small repo-maintenance workflows.
+A minimal OpenCode plugin that ships a handful of small repo-maintenance commands and skills.
 
-Use `/wt` for worktree setup guidance.
-Use `/wt-clean` to remove finished worktrees and unused branches safely.
-Use `/foxy-init` to keep `AGENTS.md` canonical while exposing `CLAUDE.md` for Claude Code compatibility.
-Use `/tidy-docs` to clean up docs and remove duplicate guidance.
-Use `/project-infographic` for fixed-format, project-branded infographics.
-Use the `codex-image-gen` skill for Codex CLI built-in `image_gen` workflows.
-Use the `project-infographic` skill for reusable infographic theme/logo workflows.
-Use the `handover` skill to write concise continuation notes to `HANDOVER.md`.
+## Commands
+
+| Command | What it does |
+| --- | --- |
+| `/wt` | Worktree setup guidance. |
+| `/wt-clean` | Remove finished worktrees and unused branches safely. |
+| `/foxy-init` | Keep `AGENTS.md` canonical while exposing `CLAUDE.md` for Claude Code. |
+| `/tidy-docs` | Clean up docs and remove duplicate guidance. |
+| `/project-infographic` | Generate fixed-format, project-branded infographics. |
+
+## Skills
+
+| Skill | What it does |
+| --- | --- |
+| `codex-image-gen` | Codex CLI built-in `image_gen` workflows. |
+| `project-infographic` | Reusable infographic theme/logo workflows. |
+| `handover` | Write concise continuation notes to `HANDOVER.md`. |
 
 ## Install
 
-Add the plugin package to OpenCode config:
+Add the plugin to your OpenCode config:
 
 ```json
 {
@@ -21,21 +30,22 @@ Add the plugin package to OpenCode config:
 }
 ```
 
-The package install copies `commands/*.md` into the global OpenCode commands directory and `skills/*` into the global OpenCode skills directory.
+The `postinstall` step copies `commands/*.md` into the global OpenCode commands directory and `skills/*` into the global OpenCode skills directory.
 
-For local plugin development, symlink `commands/*.md` into your OpenCode commands directory and symlink `src/index.js` into your OpenCode plugins directory.
+### Local development
 
-## What this repo does
+Symlink `commands/*.md` into your OpenCode commands directory and symlink `src/index.js` into your OpenCode plugins directory.
 
-- ships a tiny plugin entrypoint
-- exposes small repo-maintenance commands
-- exposes a small init workflow for `AGENTS.md` + `CLAUDE.md`
-- exposes a fixed-format project infographic workflow
-- exposes the `codex-image-gen` skill
-- exposes the `handover` skill
+## Scope
 
-## What it does not do
+**Ships:**
+- A tiny plugin entrypoint
+- Small repo-maintenance commands
+- An init workflow for `AGENTS.md` + `CLAUDE.md`
+- A fixed-format project infographic workflow
+- The `codex-image-gen` and `handover` skills
 
-- no wrapper scripts
-- no runtime automation or heavy hooks
-- no full workflow implementation
+**Does not ship:**
+- Wrapper scripts
+- Runtime automation or heavy hooks
+- Full workflow implementations
