@@ -1,6 +1,6 @@
 {
   "name": "foxypowers",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Minimal OpenCode plugin with small repo-maintenance commands.",
   "type": "module",
   "main": "src/index.js",
