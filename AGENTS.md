@@ -6,6 +6,7 @@ This repo is maintainer-focused and intentionally small.
 - Keep slash commands self-contained; do not rely on separately installed skills.
 - Keep canonical worktree guidance in `commands/wt.md`.
 - Use `commands/tidy-docs.md` when docs need cleanup or reorganization.
+- Use `commands/worklog.md` for durable task worklogs under `docs/worklogs/NNN-short-name.md` when work needs to survive context loss or be handed to another agent/session.
 - When behavior changes, check whether related docs need updates.
 - Keep one canonical source per topic; delete duplicates instead of syncing them.
 - During investigation, first gather likely causes and independent checks before asking the user to continue.

@@ -10,6 +10,7 @@ A minimal OpenCode plugin that ships a handful of small repo-maintenance command
 | `/wt-clean` | Remove finished worktrees and unused branches safely. |
 | `/foxy-init` | Keep `AGENTS.md` canonical while exposing `CLAUDE.md` for Claude Code. |
 | `/tidy-docs` | Clean up docs and remove duplicate guidance. |
+| `/worklog` | Create or refresh durable task worklogs under `docs/worklogs/`. |
 | `/project-infographic` | Generate fixed-format, project-branded infographics. |
 
 ## Skills
