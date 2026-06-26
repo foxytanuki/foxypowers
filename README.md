@@ -31,7 +31,7 @@ Add the plugin to your OpenCode config:
 }
 ```
 
-The `postinstall` step copies `commands/*.md` into the global OpenCode commands directory and `skills/*` into the global OpenCode skills directory.
+The plugin syncs `commands/*.md` into the global OpenCode commands directory and `skills/*` into the global OpenCode skills directory when it loads. The `postinstall` step also performs the same copy for initial installs.
 
 ### Local development
 
